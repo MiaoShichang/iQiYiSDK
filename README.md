@@ -1,6 +1,16 @@
 # iQiYiSDK
 爱奇艺 视频托管接口封装，此SDK只是个人封装，非官方SDK，仅供参考学习。
 
+## 【注册key secret】
+    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+        // Override point for customization after application launch.
+        
+        //注册key secret
+        [[IQYSDK shareInstance]setAppKey:kQIYIAppKey appSecret:kQIYIAppSecret];
+        
+        return YES;
+    }
+    
 
 ### 【上传视频】
     NSString* srcPath = [[NSBundle  mainBundle] pathForResource:@"test" ofType:@"mp4"];
